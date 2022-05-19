@@ -7,6 +7,9 @@ app = Flask(__name__)
 def parse(message):
     pass
 
+@app.get("/")
+def get_test():
+    return 200
 
 @app.post("/upload")
 def receive_data():
