@@ -7,7 +7,7 @@ app = Flask(__name__)
 def parse(message):
     pass
 
-@app.route("/upload")
+@app.post("/upload")
 def receive_data():
     if request.is_json:
         message = request.get_json()
