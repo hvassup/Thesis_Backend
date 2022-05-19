@@ -1,3 +1,3 @@
 #!/bin/bash
 git pull
-python3 src/app3.py
+python3 src/app.py
