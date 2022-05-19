@@ -13,11 +13,11 @@ def receive_data():
         message = request.get_json()
         try:
             parse(message)
-            return None, 200
+            return "Ok!", 200
         except Exception as e:
             print(e)
-            return None, 400
-    return None, 400
+            return "Data could not be parsed!", 400
+    return "Data not in JSON format!", 400
 
 
 if __name__ == '__main__':
